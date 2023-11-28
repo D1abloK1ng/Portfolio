@@ -1,0 +1,109 @@
+html {
+    margin: 20px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    font-size: xx-large;
+    font: bolder;
+    padding: 20px;
+}
+
+.contactsection {
+    border-style: solid;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.contactsection a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.contactelements {
+    border-style: solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+}
+.contactelements:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+/* The navbar container */
+.topnav {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+  
+/* Navbar links */
+.topnav a {
+    border-style: solid;
+    border-radius: 10%;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+  
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+    .vertical {
+        opacity: 0;
+    }
+}
+
+/* This is for a vertical line to seperate the columns (Design choice)*/
+.vertical {
+    border-left: 3px solid whitesmoke;
+    height: 650px;
+    position: absolute;
+    left: 50%;
+    margin-top: 40px;
+}
+
+.ProfilePic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.ExampleImg {
+    width: 50%;
+}
