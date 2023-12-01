@@ -1,3 +1,4 @@
+/*General style code for overall website design*/
 html {
     margin: 20px;
     text-align: center;
@@ -5,23 +6,33 @@ html {
     color: whitesmoke;
 }
 
+/*Body style code*/
 body {
     margin: 0;
 }
 
+/*Style code for h1 tags*/
 h1 {
     font: bolder;
     padding: 20px;
 }
 
+/*Style code for titles*/
 .title {
     text-decoration: underline;
 }
 
+/*Style code for top of page link*/
 .top{
     color: whitesmoke;
 }
 
+/*style code to turn horizontal lines into half width*/
+.halfhorizontal {
+    width: 50%;
+}
+
+/*style code for the contact section of the contact page*/
 .contactsection {
     border-style: solid;
     width: 50%;
@@ -31,11 +42,13 @@ h1 {
     padding-right: 5px;
 }
 
+/*style for for the links in the contact section*/
 .contactsection a{
     text-decoration: none;
     color: whitesmoke;
 }
 
+/*style code for the link sections*/
 .contactelements {
     border-style: solid;
     margin-top: 5px;
@@ -43,6 +56,7 @@ h1 {
     padding: 5px;
 }
 
+/*style change when user hovers over links*/
 .contactelements:hover{
     background-color: #ddd;
     color: black;
@@ -70,6 +84,7 @@ h1 {
     color: black;
 }
 
+/*Bottom nav links*/
 .bottomnav a{
     text-decoration: none;
     color: whitesmoke; 
@@ -81,6 +96,7 @@ h1 {
     color: black;
 }
 
+/*a universal selector to add border box*/
 * {
     box-sizing: border-box;
 }
@@ -99,26 +115,34 @@ h1 {
     clear: both;
 }
   
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - changes elements defined within to fit mobile screens */
 @media screen and (max-width:600px) {
+    /*changes column design to fit mobile screens*/
     .column {
         width: 100%;
     }
+    /*hides vertical line on mobile screens*/
     .vertical {
         opacity: 0;
     }
+    /*changes contact section design to fit mobile screens*/
     .contactsection {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
     }
+    /*changes top nav links design to fit mobile screens*/
     .topnav a {
         float: left;
         width: 100%;
     }
+    /*changes half horizontal line to fit mobile screens*/
+    .halfhorizontal {
+        width: 75%;
+    }
 }
 
-/* This is for a vertical line to seperate the columns (Design choice)*/
+/* This is for a vertical line to separate the columns (Design choice)*/
 .vertical {
     border-left: 3px solid whitesmoke;
     height: 650px;
@@ -127,6 +151,7 @@ h1 {
     margin-top: 40px;
 }
 
+/*style code for profile pic*/
 .ProfilePic {
     width: 200px;
     height: 200px;
@@ -134,6 +159,7 @@ h1 {
     padding-bottom: 20px;
 }
 
+/*Add style code to images with example img class*/
 .ExampleImg {
     width: 50%;
 }
