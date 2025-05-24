@@ -34,6 +34,16 @@ h1 {
     padding: 20px;
 }
 
+/*Style code index links*/
+.links {
+    color: blue;
+}
+
+/*style change when user hovers over links*/
+.links:hover{
+    color: purple;
+}
+
 /*Sticky class for sticky positioning*/
 .sticky {
     position: sticky;
